@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
   }
+  html{
+      scroll-behavior: smooth;
+  }
   @font-face {
     font-family: firstFont;
     src: url(../fonts/Roboto-Regular.ttf);
@@ -25,6 +28,24 @@
   nav{
       font-family: firstFont;
   }
+  
+  .scrollToTop{
+    position: fixed; 
+	bottom: 20px; 
+	right: 20px; 
+	text-decoration: none; 
+	color: #fff; 
+	background: #151f28; 
+    padding: 10px 15px; 
+    border-radius: 50%;
+	/* display: none;  */
+
+}
+.scrollToTop:hover{
+    color: #151f28; 
+	background: #fff;
+}
+
 .quets{
     margin: 150px 0 0 0;
     font-family: secondFont;

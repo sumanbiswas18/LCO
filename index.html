@@ -15,13 +15,13 @@
 <body>
     <!-- header part start here -->
     <!-- navigation bar start here -->
-  <div class="head container-fluid">
-    <nav class="navbar navbar-expand-md navbar-dark   ">
+  <div class="head container-fluid" id="home">
+    <nav class="navbar navbar-expand-md navbar-dark">
         <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="index.html"><img src="images/logo.png" alt="" >
-              <span class="text-white">L</span>
-              <span class="text-dark">C</span>
-              <span class="text-success">O</span>
+            <a class="navbar-brand mx-auto" href="index.html"><img src="images/logo.png" alt="" height="40px" width="40px">
+              <span class="text-dark">L</span>
+              <span class="text-success">C</span>
+              <span class="text-white">O</span>
               
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -31,23 +31,23 @@
       <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                   Menu
                   </a>
                   <div class="dropdown-menu" aria-labelledby="Preview">
-                  <a class="dropdown-item" href="#">Normal Juice</a>
-                  <a class="dropdown-item" href="#">Kids Smoothies</a>
-                  <a class="dropdown-item" href="#">Protein Smoothies</a>
+                  <a class="dropdown-item" href="#normal">Normal Juice</a>
+                  <a class="dropdown-item" href="#kids">Kids Smoothies</a>
+                  <a class="dropdown-item" href="#protein">Protein Smoothies</a>
                   </div>
               
               <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#ab-us">About Us</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
               </li>
           </ul>
       </div>
@@ -66,13 +66,16 @@
       <div class="col-md-4 col-sm-6 text-white text-center">
           <h4 class="quets">"A healthy outside<br>
            Strats from the inside."</h4>
-           <button class="btn btn-dark btn-md justify-content-center mt-2">Let's Go</button>
+           <a href="#start"class="btn btn-dark btn-md justify-content-center mt-2">Let's Begin</a>
       </div>
+        <div class="col-md-2 text-center">
+          
+        </div>
     </div>
   </div>
 <!-- hero part end here -->
 
-<div class="menu ">
+<div class="menu " id="start">
   <!-- menu heading gose here -->
     <div class=" container-fluid modal-header  justify-content-center">
       <h2 class="font-weight-bold oMenu">Our Menu</h2>
@@ -80,7 +83,7 @@
   <!-- menu heading end here -->
   
 <!-- the normal juice -->
-  <div class="container mtop">
+  <div class="container mtop" id="normal">
     <div class="row">
       <div class="col-md-6 text-center mt-lg-5 mt-md-1 fruit">
           <h2 class="font-weight-light juice-cat-1 m-lg-3 m-md-1">Normal Juice</h2>
@@ -155,7 +158,7 @@
 
 
   <!-- the kids juice -->
-  <div class="container mtop">
+  <div class="container mtop" id="kids">
       <div class="row">
         <div class="col-md-6 col-sm-12 text-center">
           <div class="row no-gutters mtop">
@@ -213,7 +216,7 @@
   
 
     <!-- the Protein juice -->
-  <div class="container mtop">
+  <div class="container mtop" id="protein">
       <div class="row">
           <div class="col-md-6 text-center mt-lg-5 mt-md-1 fruit">
               <h2 class="font-weight-light juice-cat-1 m-lg-3 m-md-1">Protein Smoothies</h2>
@@ -268,7 +271,7 @@
 </div>
 
 <!-- About us Strats here -->
-<div class="about">
+<div class="about" id="ab-us">
     <div class="container">
         <div class="row justify-content-center text-center">
             <h2 class="font-weight-bold oabout">Our Stories</h2><br>
@@ -299,7 +302,7 @@
 <!-- About us end here -->
 
 <!-- contact start here -->
-<div class="contact">
+<div class="contact" id="contact">
     <div class="container">
         <div class="row justify-content-center">
             <h2 class="font-weight-bold oabout">Contact Us</h2><br>
@@ -414,8 +417,15 @@
      </div>
     </div>
   </div> 
-
+  <a href="#home" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
   <!-- footer part end here -->
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
