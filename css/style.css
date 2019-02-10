@@ -29,6 +29,10 @@
       font-family: firstFont;
   }
   
+  .show{
+      display: block;
+  }
+  
   .scrollToTop{
     position: fixed; 
 	bottom: 20px; 
@@ -38,12 +42,13 @@
 	background: #151f28; 
     padding: 10px 15px; 
     border-radius: 50%;
-	/* display: none;  */
-
+	display: none; 
+    transition: 0.5s;
 }
 .scrollToTop:hover{
     color: #151f28; 
-	background: #fff;
+    background: rgb(165, 161, 161);
+    cursor: pointer;
 }
 
 .quets{
